@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% for section in site.sections %}
+  <a name='{{section[0]}}'></a>
+  <section class='{% cycle 'light', 'dark' %}' data-anchor='{{section[0]}}'>
+    <h1>{{section[1].header}}</h1>
+    {% for paragraph in section[1].paragraphs %}
+      <p>{{paragraph}}</p>
+    {% endfor %}
+    {% for quote in section[1].quotes %}
+      <blockquote>
+        “{{quote.quote}}”
+        <footer>
+          <strong>{{quote.author}}</strong>, {{quote.author_description}}
+        </footer>
+      </blockquote>
+    {% endfor %}
+    {% if section[1].coming_soon_text %}
+      <center><h2><em>{{section[1].coming_soon_text}}</em></h2></center>
+    {% endif %}
+  </section>
+{% endfor %}

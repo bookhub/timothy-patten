@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    {% include hero.html %}
+    <div class="page-content">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+    <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src='javascripts/application.js'></script>
+    {% if site.addthis_publisher_id %}
+      <div class="addthis_native_toolbox"></div>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{site.addthis_publisher_id}}" async="async"></script>
+    {% endif %}
+  </body>
+</html>

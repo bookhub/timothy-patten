@@ -1,0 +1,10 @@
+<header>
+  <h1>{{ site.book_author }}</h1>
+</header>
+<nav>
+  <ul>
+    {% for section in site.sections %}
+      <li><a href='#{{section[0]}}' data-scroll='{{section[0]}}'>{{section[1].nav_item_name}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

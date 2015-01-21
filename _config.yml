@@ -1,0 +1,38 @@
+# Site settings
+book_author: Timothy Patten
+book_title: Money, Family, Murder
+url: http://timothy-patten.github.io
+title: Timothy Patten — Money, Family, Murder
+email: your-email@domain.com
+description: >
+  Tim Patten takes us into the dark heart of one of America’s most exclusive communities, an enclave rife with secrets, lies, and betrayal. His debut novel will leave you on the edge of your seat, begging for mercy — and begging for more.
+baseurl: "" # the subpath of your site, e.g. /blog/
+addthis_publisher_id: ra-54992d543ea23170
+
+sections:
+
+  about_the_book:
+    nav_item_name: The Book
+    header: About the Book
+    paragraphs:
+      - "In the picture-perfect community of Newport Beach, violent crime is virtually non-existent. Until one sunny morning, when the beautiful bookkeeper of Newport’s wealthiest family is found strangled in her bed. Johnny Barnes — loyal husband, dad, philanthropist, and all-around decent guy — is arrested for the murder."
+      - "Johnny has been wrongly accused. He is released on $20 million bail, but the tide of public feeling turns rapidly against him; everyone has competing agendas, from the power-hungry DA to a perspicacious police detective to Johnny’s influential brother-in-law. With diminishing resources and dwindling hope, Barnes must conduct his own investigation. His journey takes him from Montecito to North Dakota to Key Biscayne as he uncovers a dazzling web of intrigue, self-dealing, exhortation, and murder."
+      - "The clock is ticking. Soon Johnny will be sent to prison for a crime he did not commit — unless he is able to identify the true murderer and clear his name in time."
+      - "A beautiful corpse. A family of billionaires. An innocent man. .. or is he?"
+      - "So begins Money, Family, Murder, an action-packed thriller set in contemporary California. On the sunny shores of Newport Beach, a young woman has been murdered. Johnny Barnes — the prime suspect — is desperate to clear his name. Johnny’s luck is running out. He must take on not only a corrupt criminal justice system but his own duplicitous in-laws, proving our families truly are the ties that bind."
+      - "Tim Patten takes us into the dark heart of one of America’s most exclusive communities, an enclave rife with secrets, lies, and betrayal. His debut novel will leave you on the edge of your seat, begging for mercy — and begging for more."
+
+  about_the_author:
+    nav_item_name: The Author
+    header: About the Author
+    paragraphs:
+      - Timothy Patten is retired, grew up in Highland Park, Illinois and graduated from University of Miami, Florida with a BBA and MBA in marketing. He volunteers and supports a few local charities in Orange County, California.
+      - Tim and his wife, Kathy, live in Irvine, California, for over twenty seven years with their grown children and golden retrievers.
+
+  where_to_buy:
+    nav_item_name: Where to Buy
+    header: Where to Buy
+    coming_soon_text: Coming Soon!
+
+# Build settings
+markdown: kramdown
