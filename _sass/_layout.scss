@@ -1,6 +1,6 @@
-$red: #c0392b;
+$red: #ec2429;
 $white: #ecf0f1;
-$black: darken(#2c3e50,15%);
+$black: #2c3e50;
 $gray: #7f8c8d;
 $light-gray: #bdc3c7;
 
@@ -150,7 +150,11 @@ section {
       border-right: 1px solid rgba(0,0,0,0.1);
     }
     text-align: center;
-    background-color: #c1cdd3;
+    background-image: url('/images/beach.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-color: #f58e70;
     height: 483px;
     padding: 0px;
   }
