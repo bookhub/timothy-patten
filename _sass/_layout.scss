@@ -1,8 +1,11 @@
+
+
 $red: #ec2429;
 $white: #ecf0f1;
 $black: #2c3e50;
 $gray: #7f8c8d;
 $light-gray: #bdc3c7;
+$blood-red: #a41619;
 
 $nav-vertical-pad: 0.5em;
 $vertical-pad: 1.5em;
@@ -100,10 +103,33 @@ nav {
 
 section {
 
+  .outer-container {
+    aside.section-image {
+      width: 180px;
+      float: left;
+      text-align: center;
+      img {
+        // border: 1px solid rgba($white,0.5);
+        // padding: 2px;
+        // background-color: $black;
+      }
+    }
+    aside.section-content {
+      margin-left: 220px;
+      width: 680px;
+    }
+  }
+
+
+
+  img.section-image {
+    float: left;
+  }
+
   padding-top: $vertical-pad;
   padding-bottom: $vertical-pad*2;
 
-  h1, p, blockquote {
+  h1, p, blockquote, .outer-container {
     @extend %wrapper;
   }
 
@@ -125,13 +151,17 @@ section {
       margin-bottom: 0px;
     }
   }
-  h1, p, blockquote footer {
+  h1, p, blockquote footer, .paragraph-content {
     font-family: $sans-serif;
   }
   h1 {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: $vertical-pad;
+    line-height: 58px;
+    background-image: url(/images/header-stroke.png);
+    background-repeat: no-repeat;
+    color: $white;
   }
   h2 {
     text-align: center;
@@ -159,15 +189,30 @@ section {
     padding: 0px;
   }
   &.light {
-    background-clor: $white;
-    h1 { color: $black; }
-    p { color: $gray; }
+    h1 {
+      /* color: $black; */
+      background-position: top left;
+    }
+    p, .paragraph-content {
+      color: $gray;
+    }
+    background-color: $white;
+    background-image: url(/images/splatter-dark-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
   }
   &.dark {
     background-color: $black;
-    h1 { color: $red; text-align: right; }
+    background-image: url(/images/splatter-light-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    h1 {
+      background-position: top right;
+      /* color: $red; */
+      text-align: right;
+    }
     h2 { color: $light-gray; }
-    p { color: $white; }
+    p, .paragraph-content { color: $white; }
   }
 }
 
