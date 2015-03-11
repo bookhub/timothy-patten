@@ -33,7 +33,8 @@ sections:
   where_to_buy:
     nav_item_name: Where to Buy
     header: Where to Buy
-    coming_soon_text: Coming Soon!
+    paypal_purchase_area: true
+    # coming_soon_text: Coming Soon!
 
 # Build settings
 markdown: kramdown

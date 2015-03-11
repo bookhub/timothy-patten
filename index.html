@@ -31,6 +31,22 @@ layout: default
         </footer>
       </blockquote>
     {% endfor %}
+    {% if section[1].paypal_purchase_area %}
+      <center>
+        <h2>Pre-order now from PayPal!</h2>
+        <h4>Be sure to include a note to Tim if you'd like your copy signed!</h4>
+        <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=tmpatten@cox.net"
+          data-button="buynow"
+          data-name="Money, Family, Murder"
+          data-quantity="1"
+          data-amount="20.00"
+          data-cn="Would you like your copy signed? Who should Tim make it out to... ?"
+          data-no-note="0"
+          data-currency="USD"
+          data-shipping="5.00"
+        ></script>
+      </center>
+    {% endif %}
     {% if section[1].coming_soon_text %}
       <center><h2><em>{{section[1].coming_soon_text}}</em></h2></center>
     {% endif %}
