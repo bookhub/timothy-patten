@@ -8,7 +8,7 @@ description: >
   Tim Patten takes us into the dark heart of one of America’s most exclusive communities, an enclave rife with secrets, lies, and betrayal. His debut novel will leave you on the edge of your seat, begging for mercy — and begging for more.
 baseurl: "" # the subpath of your site, e.g. /blog/
 addthis_publisher_id: ra-54992d543ea23170
-
+google_analytics: UA-63108252-1
 sections:
 
   about_the_book:
